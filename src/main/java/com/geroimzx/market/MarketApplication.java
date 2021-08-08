@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021.
+ */
+
 package com.geroimzx.market;
 
 import org.springframework.boot.CommandLineRunner;
@@ -7,11 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 import java.util.Arrays;
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
+@EnableMongoRepositories
 public class MarketApplication {
 
 	public static void main(String[] args) {

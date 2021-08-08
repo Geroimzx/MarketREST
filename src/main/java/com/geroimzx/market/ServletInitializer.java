@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021.
+ */
+
 package com.geroimzx.market;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
